@@ -20,7 +20,7 @@ export default function Topbar() {
                 <Search className="w-4 h-4 text-gray-400 mr-2" />
                 <input
                     type="text"
-                    placeholder="Ask Vittya anything..."
+                    placeholder="Ask Vittya Assistant..."
                     className="bg-transparent border-none outline-none text-sm text-white w-full placeholder:text-gray-500"
                 />
             </div>

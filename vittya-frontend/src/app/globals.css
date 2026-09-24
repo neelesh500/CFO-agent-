@@ -48,3 +48,5 @@ body {
   background-clip: text;
   color: transparent;
 }
+/* Updated responsive base */
+@media (max-width: 768px) { .panel { padding: 1rem; } }

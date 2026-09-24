@@ -4,7 +4,7 @@ import Sidebar from '@/components/Sidebar';
 import Topbar from '@/components/Topbar';
 
 export const metadata: Metadata = {
-  title: 'Vittya AI | Autonomous CFO Platform',
+  title: 'Vittya AI Platform',
   description: 'Enterprise-grade Autonomous CFO platform powered by multi-agent intelligence.',
 };
 

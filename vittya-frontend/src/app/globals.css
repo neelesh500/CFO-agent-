@@ -1,21 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-bg: #090a0f;
-  --color-brand-panel: #12141c;
-  --color-brand-cyan: #00F2FE;
-  --color-brand-mint: #10B981;
-  --color-brand-mint-glow: #00df81;
+  --color-brand-bg: #0f1115;
+  --color-brand-panel: #181a1f;
+  --color-brand-primary: #3b82f6;
+  /* Blue 500 */
+  --color-brand-secondary: #64748b;
+  /* Slate 500 */
+  --color-brand-success: #10b981;
+  /* Emerald 500 */
+  --color-brand-danger: #ef4444;
+  /* Red 500 */
 
-  --color-border-glow: rgba(255,255,255,0.08);
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-visible: rgba(255, 255, 255, 0.1);
 
   --font-sans: "Inter", "Plus Jakarta Sans", sans-serif;
 }
 
 @layer base {
   :root {
-    --background: #090a0f;
-    --foreground: #ffffff;
+    --background: #0f1115;
+    --foreground: #f8fafc;
+    /* Slate 50 */
   }
 }
 
@@ -28,15 +35,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.glass-panel {
-  background-color: #12141c;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.panel {
+  background-color: var(--color-brand-panel);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.text-gradient {
-  background: linear-gradient(90deg, #00F2FE 0%, #10B981 100%);
+.text-primary-gradient {
+  background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

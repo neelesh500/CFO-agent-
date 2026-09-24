@@ -34,7 +34,7 @@ export default function Sidebar() {
                 <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center shadow-lg">
                     <Briefcase className="text-white w-5 h-5" />
                 </div>
-                <h1 className="text-xl font-bold tracking-tight text-white">Vittya AI</h1>
+                <h1 className="text-xl font-bold tracking-tight text-white">Vittya AI System</h1>
             </div>
 
             <nav className="flex-1 px-4 space-y-1 overflow-y-auto">

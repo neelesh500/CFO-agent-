@@ -103,7 +103,7 @@ export default function DashboardPage() {
         </div>
 
         <div className="panel p-6 rounded-xl border border-[#ffffff0a]">
-          <h2 className="text-base font-semibold mb-6">Expense Breakdown</h2>
+          <h2 className="text-base font-semibold mb-6">Expense Breakdown & Analysis</h2>
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={[

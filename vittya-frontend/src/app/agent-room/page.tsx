@@ -216,3 +216,6 @@ export default function AgentRoomPage() {
         </div>
     );
 }
+
+// Animated autonomous agent face integrated
+

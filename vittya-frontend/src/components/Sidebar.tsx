@@ -76,3 +76,6 @@ export default function Sidebar() {
         </div>
     );
 }
+
+// RBAC restricted component elements
+

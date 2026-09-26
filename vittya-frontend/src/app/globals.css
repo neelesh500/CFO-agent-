@@ -50,3 +50,5 @@ body {
 }
 /* Updated responsive base */
 @media (max-width: 768px) { .panel { padding: 1rem; } }
+/* UI framework core aesthetics */
+

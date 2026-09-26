@@ -1,8 +1,10 @@
+# pyrefly: ignore [missing-import]
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 from sklearn.linear_model import LinearRegression
 import random
+# pyrefly: ignore [missing-import]
 from duckduckgo_search import DDGS
 
 class FinancialMLEngine:

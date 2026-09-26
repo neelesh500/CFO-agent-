@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
-import { Send, Activity, Mic, SquareTerminal, Bot, ShieldAlert, Cpu } from 'lucide-react';
+import { Send, Activity, Mic, SquareTerminal, Bot, ShieldAlert, Cpu, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type LogEntry = {
@@ -120,16 +120,26 @@ export default function AgentRoomPage() {
                             <motion.div
                                 animate={{
                                     scale: agentState === 'speaking' ? [1, 1.15, 1] : 1,
-                                    opacity: agentState === 'idle' ? 0.5 : 1
+                                    opacity: agentState === 'idle' ? 0.8 : 1
                                 }}
                                 transition={{ repeat: Infinity, duration: 1.5 }}
-                                className={`w-32 h-32 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(0,242,254,0.3)] transition-colors duration-500 ${agentState === 'idle' ? 'bg-brand-panel border border-brand-cyan/20' :
-                                    agentState === 'listening' ? 'bg-brand-mint/20 border-brand-mint' :
-                                        agentState === 'processing' ? 'bg-brand-cyan/30 border-brand-cyan' :
-                                            'bg-white/20 border-white'
+                                className={`w-40 h-40 rounded-full flex items-center overflow-hidden justify-center shadow-[0_0_50px_rgba(0,242,254,0.3)] transition-colors duration-500 ${agentState === 'idle' ? 'bg-brand-panel border-2 border-brand-cyan/40' :
+                                    agentState === 'listening' ? 'bg-brand-mint/20 border-2 border-brand-mint' :
+                                        agentState === 'processing' ? 'bg-brand-cyan/30 border-2 border-brand-cyan' :
+                                            'bg-blue-600/30 border-2 border-blue-400'
                                     }`}
                             >
-                                <Bot className={`w-12 h-12 ${agentState === 'listening' ? 'text-brand-mint' : 'text-brand-cyan'} drop-shadow-[0_0_10px_currentColor]`} />
+                                {/* Simulating a human face */}
+                                <div className="relative w-full h-full">
+                                    <img
+                                        src="https://api.dicebear.com/7.x/notionists/svg?seed=CFO&size=96&backgroundColor=transparent"
+                                        alt="Human CFO Agent"
+                                        className={`w-full h-full object-cover transition-transform duration-300 ${agentState === 'speaking' ? 'scale-110' : 'scale-100'}`}
+                                    />
+                                    {agentState === 'speaking' && (
+                                        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-6 h-2 bg-blue-300 rounded-full animate-pulse blur-[1px]"></div>
+                                    )}
+                                </div>
                             </motion.div>
                         </div>
 

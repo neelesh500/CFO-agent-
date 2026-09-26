@@ -131,3 +131,6 @@ export default function DataControlPage() {
         </div>
     );
 }
+
+// Layout optimized for mobile responsiveness
+

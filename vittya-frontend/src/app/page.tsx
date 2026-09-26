@@ -129,3 +129,6 @@ export default function DashboardPage() {
     </div>
   );
 }
+
+// Dashboard metrics integration active
+

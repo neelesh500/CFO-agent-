@@ -33,3 +33,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+// Global application shell initialization
+

@@ -38,7 +38,7 @@ export default function Sidebar() {
                     <Briefcase className="text-white w-5 h-5" />
                 </div>
                 <div>
-                    <h1 className="text-xl font-bold tracking-tight text-white">Vittya AI System</h1>
+                    <h1 className="text-xl font-bold tracking-tight text-white">Vittya AI System - Advanced</h1>
                     {user && <p className="text-xs text-blue-400 mt-1 uppercase tracking-wider">{user.role}</p>}
                 </div>
             </div>

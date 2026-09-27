@@ -7,3 +7,5 @@ pydantic==2.7.4
 
 
 pytest
+
+black

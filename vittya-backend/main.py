@@ -279,5 +279,9 @@ def get_dashboard_metrics():
         "status": "Healthy"
     }
 
+@app.get("/api/ml/status")
+def get_ml_status(user: dict = Depends(get_current_user)):
+    return ml_core.get_model_status()
+
 # Enhanced logging mechanisms for analytics monitoring
 

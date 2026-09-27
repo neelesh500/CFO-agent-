@@ -38,3 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Frontend Structure
 Maintained using Next.js 15+ App Router approach.
+
+- Beautiful Aesthetic Mode

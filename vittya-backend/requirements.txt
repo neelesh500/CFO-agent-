@@ -17,3 +17,5 @@ mypy
 python-multipart
 
 uvicorn
+
+pydantic-settings

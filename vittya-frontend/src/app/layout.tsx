@@ -5,7 +5,7 @@ import Topbar from '@/components/Topbar';
 import { AuthProvider } from '@/components/AuthProvider';
 
 export const metadata: Metadata = {
-  title: 'Vittya AI Platform',
+  title: 'Vittya AI Platform - Enterprise Autonomous CFO',
   description: 'Enterprise-grade Autonomous CFO platform powered by multi-agent intelligence.',
 };
 

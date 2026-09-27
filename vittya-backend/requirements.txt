@@ -5,3 +5,5 @@ pydantic==2.7.4
 
 # Latest dependency requirements met
 
+
+pytest

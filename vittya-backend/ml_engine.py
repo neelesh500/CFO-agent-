@@ -43,6 +43,8 @@ class FinancialMLEngine:
         is_anomaly = True if prediction == -1 else False
         return {
             "amount": amount,
+            "category": category,
+            "is_weekend": bool(is_weekend),
             "is_anomaly": is_anomaly,
             "anomaly_score": round(abs(confidence), 3),
             "status": "FLAGGED (High Risk)" if is_anomaly else "CLEARED"
@@ -54,7 +56,18 @@ class FinancialMLEngine:
         predictions = self.forecaster.predict(future_months)
         return {
             "proj_revenue_m3": round(predictions[-1], 2),
-            "trend": "Positive" if predictions[-1] > predictions[0] else "Negative"
+            "trend": "Positive" if predictions[-1] > predictions[0] else "Negative",
+            "months_ahead": months_ahead
+        }
+
+    def get_model_status(self) -> dict:
+        """Returns the current status and metadata of the ML models."""
+        return {
+            "anomaly_detector": "Online",
+            "anomaly_detector_type": "IsolationForest",
+            "forecaster": "Online",
+            "forecaster_type": "LinearRegression",
+            "trained_on": "Synthetic Historical Data"
         }
 
 class DeepSearchAgent:
